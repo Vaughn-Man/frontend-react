@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    background-image: url("ghibli.jpg");
+}
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid rgb(24, 193, 202);
+  color: black;
+  display: 20%;
+  margin-left: 350px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+textarea{
+  margin-top: 25px;
+  display: block;
+  width: 40%;
+  height: 200px;
+  margin: auto;
+  color: black;
+  border-radius: 10%;
+}
+.align{
+  border: 5px solid;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+ul {
+  padding: auto;
+  border: 5px solid;
+}
+li{
+  padding: 5px;
+}
+button{
+  border: 5px solid;
+  margin-left: 50px;
+  margin-right: auto;
+}
